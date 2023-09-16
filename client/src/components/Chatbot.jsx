@@ -52,7 +52,9 @@ function Chatbot() {
             className="search"
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit" className="sbt-btn">↑</button>
+          <button type="submit" className="sbt-btn">
+            ↑
+          </button>
         </form>
         <div className={isTyping ? "" : "hide"}>
           <p>
@@ -79,37 +81,27 @@ function Chatbot() {
               <div className="suggestions">
                 <div
                   className="output"
-                  onClick={() => handleClick("List some ayurvedic medicine")}
+                  onClick={() => handleClick("Write an email")}
                 >
-                  <span>List some ayurvedic medicine</span>
+                  <span>Write an email</span>
                 </div>
                 <div
                   className="output"
-                  onClick={() => handleClick("Origins of ayurveda")}
+                  onClick={() => handleClick("Create a workout plan")}
                 >
-                  <span>Origins of ayurveda</span>
+                  <span>Create a workout plan</span>
                 </div>
                 <div
                   className="output"
-                  onClick={() =>
-                    handleClick(
-                      "Can you recommend natural remedies for headaches?"
-                    )
-                  }
+                  onClick={() => handleClick("Suggest fun activites")}
                 >
-                  <span>Can you recommend natural remedies for headaches?</span>
+                  <span>Suggest fun activites</span>
                 </div>
                 <div
                   className="output"
-                  onClick={() =>
-                    handleClick(
-                      "What are some common herbs used in Ayurvedic medicine?"
-                    )
-                  }
+                  onClick={() => handleClick("Make a content strategy")}
                 >
-                  <span>
-                    What are some common herbs used in Ayurvedic medicine?
-                  </span>
+                  <span>Make a content strategy</span>
                 </div>
               </div>
             </>
